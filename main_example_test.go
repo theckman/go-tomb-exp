@@ -3,8 +3,8 @@
 
 package main
 
-func ExampleRunner() {
-	Runner()
+func ExampleSimpleRunner() {
+	SimpleRunner()
 
 	// Output: sleeping for 1 seconds
 	// sleeping for 2 seconds

@@ -10,7 +10,7 @@ import (
 	"github.com/theckman/go-tomb-exp/tombexp"
 )
 
-func Runner() error {
+func SimpleRunner() error {
 	cryptKeeper := &tombexp.TalesFromTheCrypt{Death: 3}
 
 	cryptKeeper.T.Go(cryptKeeper.Sleeper)
@@ -19,7 +19,7 @@ func Runner() error {
 }
 
 func main() {
-	err := Runner()
+	err := SimpleRunner()
 	if err != nil {
 		fmt.Println("error:", err)
 	}
